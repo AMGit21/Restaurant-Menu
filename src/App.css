@@ -1,5 +1,5 @@
 :root {
-  --bg-color: rgba(70, 70, 170, 0.9);
+  --bg-color: rgba(70, 70, 170, 0.902);
   --main-color: rgba(206, 0, 65, 0.9);
   --text-color: whitesmoke;
   --box-shadow: 0 3px 6px var(--bg-color);
@@ -214,8 +214,8 @@ li {
   }
   .footer {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 170px;
   }
 }
