@@ -1,0 +1,129 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-color);
+  color: var(--main-color);
+  width: 270px;
+  height: 242px;
+  border-radius: 5px;
+  border-bottom: 2px solid var(--bg-color);
+  margin: 12px;
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer;
+}
+.flipped {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--text-color);
+  color: var(--text-color);
+  width: 230px;
+  height: 202px;
+  border-radius: 5px;
+  border-bottom: 2px solid var(--bg-color);
+  margin: 12px;
+  padding: 20px;
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer;
+}
+.ingredientsTitle {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  padding: 8px 20px;
+}
+.ingredientsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: inherit;
+  font-weight: 100;
+  width: inherit;
+  margin-left: -40px;
+}
+.ingredient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  padding: 5px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+.ingredientsCloseBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  padding: 7px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  border: none;
+  right: -180px;
+  box-shadow: var(--box-shadow);
+}
+.flipped:hover .ingredientsCloseBtn {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.item:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.item:hover .ingredientsBtn {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+.itemImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: 200px;
+  border-radius: 5px;
+}
+.itemImg {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  width: 240px;
+  height: fit-content;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 7px;
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer;
+}
+.ingredientsBtn {
+  color: var(--main-color);
+  padding: 5px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .item {
+    width: 75vw;
+  }
+}

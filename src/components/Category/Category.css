@@ -1,0 +1,27 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--bg-color);
+  font-weight: bold;
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+  margin: 40px 0;
+}
+
+.categoryBackground{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .categoryBackground {
+      width: 100vw;
+      height: 250px;
+  }
+}
